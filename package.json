@@ -1,0 +1,48 @@
+{
+  "name": "jest",
+  "version": "1.0.0",
+  "description": "jest test",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --collectCoverage"
+  },
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!**/node_modules/**",
+    "!**/vendor/**"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": 100,
+      "functions": 100,
+      "lines": 100
+    }
+  },
+  "keywords": [
+    "jest",
+    "test"
+  ],
+  "author": "Victor Petrunin",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "cypress": "^12.8.1",
+    "eslint": "^8.36.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-vue": "^9.9.0",
+    "jest": "^27.5.1",
+    "package-name": "^0.1.0",
+    "prettier": "2.8.6",
+    "typescript": "^5.0.2"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
